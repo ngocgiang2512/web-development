@@ -1,5 +1,11 @@
 # Learing Web Development
 
+- 01-06: nodejs - modules: http, url
+- 10-17: expressjs
+- 20-2x: reactjs
+
+************************************************************
+
 - 01. create web server
 - 02. add an HTTP header
 - 03. read the query string
@@ -15,6 +21,10 @@
 - 15. middleware
 - 16. templating - pug
 - 17. static files
+
+- 20. reactjs - environtment
+- 21. state and props, stateless and stateful component
+- 22. higher order component
 
 ************************************************************
 
@@ -89,3 +99,15 @@ app.get('/things/:id([0-9]{5})', function(req, res){
 `app.use(express.static('images'));`
 Virtual Path Prefix:
 `app.use('/static', express.static('public'));`
+
+************************************************************
+
+## 20. reactjs - environment
+### source: https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm
+- using configuration from dynamic journal project: create-react-app package
+
+## 21. state and props, stateless and stateful component
+### source: https://www.tutorialspoint.com/reactjs/reactjs_components.htm
+
+## 22. higher order component
+### source: https://www.tutorialspoint.com/reactjs/reactjs_higher_order_components.htm
