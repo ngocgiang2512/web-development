@@ -31,6 +31,7 @@
 
 - 40. web APIs - setup environtment
 - 41. working with SQL databases
+- 42. crud (create, read, update, delete)
 
 ************************************************************
 
@@ -136,5 +137,7 @@ Virtual Path Prefix:
 
 ## 41 working with SQL databases
 - $ npm install sequelize sqlite --save
+- connect to the database using Singleton pattern
 
-
+## 42 crud (create, read, update, delete)
+- $ npm install body-parser --save
