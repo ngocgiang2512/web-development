@@ -7,4 +7,9 @@ http.createServer(function (req, res) {
     res.write(data);
     res.end();
   });
+
+  fs.writeFile('textfile.txt', 'This is my text', function (err) {
+    if (err) throw err;
+    console.log('Replaced!');
+  });
 }).listen(8080);

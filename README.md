@@ -3,6 +3,7 @@
 - 01-06: nodejs - modules: http, url
 - 10-17: expressjs
 - 20-2x: reactjs
+- 40-4x: web api
 
 ************************************************************
 
@@ -10,7 +11,7 @@
 - 02. add an HTTP header
 - 03. read the query string
 - 04. split the query string
-- 05. read files
+- 05. file system
 - 06. ready files by url
 
 - 10. expressjs - environtment
@@ -22,9 +23,14 @@
 - 16. templating - pug
 - 17. static files
 
-- 20. reactjs - environtment
-- 21. state and props, stateless and stateful component
-- 22. higher order component
+- 20. test - environment
+- 21. reactjs - using cdn, no npm install
+- 22. reactjs - environtment
+- 23. state and props, stateless and stateful component
+- 24. higher order component
+
+- 40. web APIs - setup environtment
+- 41. working with SQL databases
 
 ************************************************************
 
@@ -38,6 +44,7 @@
 `res.writeHead(200, {'Content-Type': 'text/html'});`
 - The first argument of the res.writeHead() method is the status code, 200 means that all is OK
 - the second argument is an object containing the response headers
+- cli: $ node myfirst.js
 
 ## 03. read the query string
 - The function passed into the http.createServer() has a req argument that represents the request from the client, as an object (http.IncomingMessage object)
@@ -48,7 +55,7 @@
 - There are built-in modules to easily split the query string into readable parts, such as the URL module
 ### Note: access: http://localhost:8080/?year=2017&month=July
 
-## 05. read files
+## 05. file system
 ### source: https://www.w3schools.com/nodejs/nodejs_filesystem.asp
 - The Nodejs file system module allow us to work with the file system on our computer
 
@@ -102,12 +109,32 @@ Virtual Path Prefix:
 
 ************************************************************
 
-## 20. reactjs - environment
+## 20. reactjs - for running examples because node_modules's size is too large
+
+## 21. reactjs - using cdn, no npm install
+
+## 22. reactjs - environment
 ### source: https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm
 - using configuration from dynamic journal project: create-react-app package
 
-## 21. state and props, stateless and stateful component
+## 23. state and props, stateless and stateful component
 ### source: https://www.tutorialspoint.com/reactjs/reactjs_components.htm
 
-## 22. higher order component
+## 24. higher order component
 ### source: https://www.tutorialspoint.com/reactjs/reactjs_higher_order_components.htm
+
+************************************************************
+
+## 40 web APIs - setup environment
+### source: Building APIs with Node.js - Caio Ribeiro Pareira
+- $ npm init -y
+- $ npm install babel-cli babel-preset-es2015 --save // use all features from ES6/7
+- // create the file .babelrc
+- $ npm install express --save
+- create the index.js file
+- $ npm install consign --save // allow our project to autoload models, routers, middlewares, configs, and more
+
+## 41 working with SQL databases
+- $ npm install sequelize sqlite --save
+
+
